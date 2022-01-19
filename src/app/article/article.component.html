@@ -1,0 +1,27 @@
+This is an article component.
+<button (click)="hideParagraph()">Show paragraph</button>
+<p *ngIf="isVisible">
+    Paragraph is visible. This is second line.
+
+</p>
+
+{{isVisible}}
+<!-- String interpolation -->
+
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Mobile No.</th>
+    </tr>
+    <tr *ngFor="let user of jsonArray">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.mobile}}</td>
+    </tr>
+
+
+</table>
+
+<app-article></app-article>
